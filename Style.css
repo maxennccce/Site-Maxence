@@ -1,0 +1,80 @@
+body {
+      color: #000000 ;
+			background-color: #cce3de ;
+  		position: absolute ;
+  		top: 0px;
+  		width: 1450px;
+  		margin: 0 auto;
+			}
+
+h1 {
+		color: white;
+		background-color: #a4c3b2;
+		text-align: left;
+		left: 720px;
+    font: 30px "Noto Sans", sans-serif;
+		}
+
+h3 {
+    color: #6C757D;
+    /*font-size: 2px;*/
+    font: italic 1.2em "Noto Sans", sans-serif;
+	  }
+
+div {
+    color: #FFFFFF;
+    background-color: #a4c3b2;
+    padding: 15px;
+    font: 1.2em "Noto Sans", sans-serif;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    width: 680px;
+    margin: 40px auto;
+    text-decoration: none;
+    }
+
+.nom {
+      color: #FFFFFF;
+      background-color: #a4c3b2;
+      padding: 2px;
+      font: bold 40px "Noto Sans", sans-serif;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      text-align: center;
+      width: 720px;
+      margin: 40px auto;
+      }
+
+.liste {
+        margin: 6px;
+        padding: .3rem;
+        background-color: #eeeeee;
+        font: 1.2em "Noto Sans", sans-serif;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        text-align: left;
+        width: 650px;
+        }
+
+.liste > h1,
+.fait {
+        margin: .5rem;
+        padding: .3rem;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        }
+
+.fait {
+        background: right/contain content-box border-box no-repeat
+        url('/media/examples/rain.svg') white;
+        }
+
+.fait > h2,
+
+.fait > h3,
+
+.fait > p {
+        margin: .2rem;
+        font-size: 1rem;
+        }
