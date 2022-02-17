@@ -1,23 +1,22 @@
 body {
-      color: #000000 ;
-			background-color: #282A36 ;
-  		position: absolute ;
-  		top: 0px;
-  		width: 1450px;
-  		margin: 0 auto;
-			}
+        color: #000000 ;
+        background-color: #282A36 ;
+        font-size: 20px;
+        position: flex ;
+        top: 0px;
+        width: auto;
+        margin: 0 auto;
+        }
 
 h1 {
-		color: white;
-		background-color: #343746;
-		text-align: left;
-		left: 720px;
-    font: 30px "Noto Sans", sans-serif;
-		}
+	color: white;
+	background-color: #343746;
+	text-align: left;
+        font: 30px "Noto Sans", sans-serif;
+	}
 
 h3 {
     color: #6C757D;
-    /*font-size: 2px;*/
     font: italic 1.2em "Noto Sans", sans-serif;
 	  }
 
@@ -35,6 +34,7 @@ div {
     }
 
 .nom {
+      margin-left:40%;
       color: #FFFFFF;
       background-color: #343746;
       padding: 2px;
@@ -44,6 +44,20 @@ div {
       text-align: center;
       width: 55%;
       margin: 40px auto;
+      }
+.PP {
+      float: left;
+      position: absolute;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: .5rem;
+      color: #FFFFFF;
+      background-color: #343746;
+      font: 5px "Noto Sans", sans-serif;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      text-align: center;
+      width: 160px;
       }
 
 .liste {
@@ -67,7 +81,8 @@ div {
 
 .fait {
         background: right/contain content-box border-box no-repeat
-        url('/media/examples/rain.svg') white;
+        url('img/IconSup.png') white;
+        background-size: 12%;
         }
 
 .fait > h2,
@@ -78,3 +93,4 @@ div {
         margin: .2rem;
         font-size: 1rem;
         }
+
