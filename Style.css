@@ -1,12 +1,31 @@
 body {
-        color: #000000 ;
-        background-color: #282A36 ;
-        font-size: 20px;
-        position: flex ;
-        top: 0px;
-        width: auto;
-        margin: 0 auto;
-        }
+      background-color: #EEEEEE; /*f5f6fa*/
+      color: #000000 ;
+      background-color: #282A36 ;
+      font-size: 20px;
+      position: flex ;
+      top: 0px;
+      width: auto;
+      margin: 0 auto;
+      }
+@media (prefers-color-scheme: no-preference) {
+body {
+      background-color: #EEEEEE; /*f5f6fa*/
+      }
+      }
+@media (prefers-color-scheme: dark) {
+body {
+      background-color: #282A36;
+      }
+.nom {
+      background-color: #343746;
+      }
+      }
+@media (prefers-color-scheme: light) {
+body {
+      background-color: #EEEEEE; /*f5f6fa*/
+      }
+      }
 
 h1 {
 	color: white;
@@ -20,18 +39,6 @@ h3 {
     font: italic 1.2em "Noto Sans", sans-serif;
 	  }
 
-div {
-    color: #FFFFFF;
-    background-color: #343746;
-    padding: .3rem;
-    font: 1.2em "Noto Sans", sans-serif;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    text-align: center;
-    width: 45%;
-    margin: 40px auto;
-    text-decoration: none;
-    }
 
 .nom {
       margin-left:40%;
@@ -45,12 +52,13 @@ div {
       width: 55%;
       margin: 40px auto;
       }
+
 .PP {
       float: left;
       position: absolute;
       margin-top: 0px;
       margin-bottom: 0px;
-      margin-left: .5rem;
+      margin-left: 1%;
       color: #FFFFFF;
       background-color: #343746;
       font: 5px "Noto Sans", sans-serif;
@@ -61,17 +69,19 @@ div {
       }
 
 .liste {
-        margin: 6px;
+        margin: 1%;
         padding: .3rem;
         background-color: #eeeeee;
         font: 1.2em "Noto Sans", sans-serif;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
         text-align: left;
-        width: 650px;
+        width: 45%;
         }
 
 .liste > h1,
+
+
 .fait {
         margin: .5rem;
         padding: .3rem;
@@ -79,18 +89,25 @@ div {
         border-radius: 4px;
         }
 
-.fait {
-        background: right/contain content-box border-box no-repeat
-        url('img/IconSup.png') white;
-        background-size: 12%;
-        }
-
 .fait > h2,
 
 .fait > h3,
 
 .fait > p {
-        margin: .2rem;
-        font-size: 1rem;
-        }
+      margin: .2rem;
+      font-size: 1rem;
+      }
+
+.contact { /*box du bas de page */
+    color: #FFFFFF;
+    background-color: #343746;
+    padding: .3rem;
+    font: 20px "Noto Sans", sans-serif;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    width: 45%;
+    margin: 2% auto;
+    text-decoration: none;
+    }
 
