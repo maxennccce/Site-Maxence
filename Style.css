@@ -1,5 +1,5 @@
 body {
-      background-color: #EEEEEE; /*f5f6fa*/
+      background-color: #f5f6fa;
       color: #000000 ;
       background-color: #282A36 ;
       font-size: 20px;
@@ -8,29 +8,104 @@ body {
       width: auto;
       margin: 0 auto;
       }
+
 @media (prefers-color-scheme: no-preference) {
 body {
-      background-color: #EEEEEE; /*f5f6fa*/
-      }
-      }
+      background-color: #f5f6fa;}
+}
+
 @media (prefers-color-scheme: dark) {
 body {
       background-color: #282A36;
       }
 .nom {
-      background-color: #343746;
-      }
-      }
+      background-color: #343746;}
+}
+
 @media (prefers-color-scheme: light) {
 body {
-      background-color: #EEEEEE; /*f5f6fa*/
-      }
+      background-color: #f5f6fa;}
+}
+
+.page-content {
+      width: auto;
+      margin: 0px auto;
       }
 
-.page {
-      width: 1400px;
+.menu {
+      display: flex;
+      padding: 0;
+      background-color: #f5f6fa;
+      margin-top: 0px;
+      width: 99.95%;
+      justify-content: right;
+      }
+
+.menu li {
+      list-style: none;
+	padding-left: 0px;
+      }
+
+.menu a {
+      display:block;
+      min-width: 60px;
+      margin: 1%;
+      padding: 0.4rem 0;
+      text-align: center;
+      background-color: #282A36;
+      color: #FFFFFF;
+      text-decoration: none;
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      font: 0.8em "Noto Sans", sans-serif;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+}
+
+.menu a {
+      display: block;
+      min-width: 120px;
+      }
+
+.menu a:hover {
+  background-color: #c50000;
+  color: #ffffff;
+  border-color: #f5f6fa;
+}
+
+.container {
+      width: 98%;
       margin: 40px auto;
       }
+
+.card {
+      display: flex;
+      align-items: center;
+      width: 55%;
+      min-width: 450px;
+      color: #ffffff;
+      margin: 2% auto;
+      text-align: center;
+      background-color: #343746;
+      padding: 2px;
+      font: bold 2em "Noto Sans", sans-serif;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      }
+
+.card img {
+      width: 200px;
+      height: 200px;
+      margin: .1em;
+      object-fit: cover;
+      }
+
+.card p {
+      position: relative;
+      flex-grow: 1;
+      padding-left: 20px;
+      text-align: center;
+}
 
 h1 {
 	color: white;
@@ -45,38 +120,9 @@ h3 {
       }
 
 
-.nom {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      width: 55%;
-      height: 157px;
-      color: #FFFFFF;
-      background-color: #343746;
-      padding: 2px;
-      font: bold 40px "Noto Sans", sans-serif;
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
-      text-align: center;
-      margin: 40px auto;
-      }
-
-.PP {
-      float: left;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 1%;
-      color: #FFFFFF;
-      background-color: #343746;
-      font: 5px "Noto Sans", sans-serif;
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
-      text-align: center;
-      width: 160px;
-      }
-
 .groupe {
       margin: 1%;
-      padding: .3rem;
+      padding: .1rem;
       background-color: #eeeeee;
       font: 1.2em "Noto Sans", sans-serif;
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -87,13 +133,12 @@ h3 {
 
 .groupe > h1,
 
-
 .fait {
         margin: .5rem;
         padding: .3rem;
         font-size: 1.2rem;
         border-radius: 4px;
-        }
+      }
 
 .fait > h2,
 
@@ -108,7 +153,7 @@ h3 {
     color: #FFFFFF;
     background-color: #343746;
     padding: .3rem;
-    font: 20px "Noto Sans", sans-serif;
+    font: 1.2rem "Noto Sans", sans-serif;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     text-align: center;
@@ -117,13 +162,30 @@ h3 {
     text-decoration: none;
     }
 
-@media only screen and (max-width:1000px) {
-.page {
-      width: 800px;
-      margin: 40px auto;
-      }
-.groupe {
-      width: 98%;
-      }
+::selection{
+  background-color: #c50000;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #C50000;
+  color: white;
+}
+
+@media (max-width:1920px) {
+      .page {
+            width: 800px;
+            margin: 40px auto;}
+      
+      .groupe {
+      width: 45%;}
       }
 
+@media (max-width:1350px) {
+      .page {
+            width: 800px;
+            margin: 40px auto;}
+      
+      .groupe {
+      width: 98%;}
+      }
